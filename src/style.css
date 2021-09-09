@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*.container{
+    border: 1px solid red;
+} */
+/*-------------composant App---------------*/
+.timer-list{
+   /* border: 1px solid black;*/
+    padding: 8px;
+}
+/*-------------composant TimerList-----------*/
+p{
+    text-align: justify;
+    color: #7c7c7c;
+}
+.row{
+    margin: 10px 0px;
+    border: 1px solid #292b2c;
+    border-radius: 6px;
+}
+.div-first{
+    padding: 10px;
+}
+.btn-trash, .btn-edit{
+    border: 0;
+    padding: 8px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+.btn-group button{
+    float: right;
+}
+/*.btn-timer{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #5cb85c;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: #5cb85c;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}*/
+.fas, .fa-trash, .fa-edit{
+    pointer-events: none;
+}
+/*---------------------composant Timer-----------------*/
+.btn-add{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #7c7c7c;
+    border-radius: 6px;
+    color: #7c7c7c;
+    margin: 10px auto;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.btn-add:hover{
+    background-color: #424242;
+    color: #f7f7f7;
+}
+/*------------------composant ToggleableTimerForm-------------*/
+.form-group{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    z-index: 99999;
+    padding: 15px;
+}
+form{
+    position: relative;
+    top: 20%;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    padding: 12px;
+}
+
+form input[type="text"]{
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #7c7c7c;
+    border-radius: 6px;
+    background-color: transparent;
+}
+.btn-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-submit input[type="submit"]{
+    display: inline-block;
+    width: 50%;
+    padding: 12px;
+    text-align: center;
+    border: 0;
+    border-radius: 6px;
+    background-color: #5cb85c;
+    color: #f7f7f7;
+    outline: none;
+    cursor: pointer;
+}
+/*--------------comosant TimerForm------------------------*/
+.btn-edit-timer button{
+    display: inline-block;
+    width: 50%;
+    outline: none;
+    border: 0;
+    background-color: whitesmoke;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 0px;
+    margin: 12px 0px;
+}
+.btn-edit-timer button:nth-child(1){
+    border: 1px solid #007aff;
+    border-bottom-left-radius: 6px;
+    color: #007aff;
+}
+.btn-edit-timer button:nth-child(2){
+    border: 1px solid 	#ff3b30;
+    border-bottom-right-radius: 6px;
+    color: 	#ff3b30;
+}
+/*----------------------Edit Timer-----------------------*/
+
+@media (min-width: 922px){
+    .timer-list{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .row{
+        width: 50%;
+        margin: 10px auto;
+    }
+    form{
+        width: 40%;
+        margin: 0 auto;
+    }
+}
