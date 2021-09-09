@@ -110,7 +110,7 @@ export class App extends Component {
   render() {
     return (
       <div className="container">
-        <Title>Timers</Title>
+        <Title>Show Timers</Title>
         <TimerList list={this.state.timerList}
           deleteTimer={this.handleDeleteTimer}
           editTimer={this.handleEditTimer}
